@@ -15,6 +15,10 @@ const useStyles = makeStyles((theme) => ({
   },
   listItemWrapper: {
     padding: theme.spacing(0, 1)
+  },
+  link: {
+    textDecoration: "none",
+    color: "inherit"
   }
 }))
 
@@ -23,22 +27,27 @@ type TMemoListItemProps = {
   showSubheader: boolean;
 }
 
-const MemoListItem: FC<TMemoListItemProps> = ({ data: {id, lastUsedDate, title, description}, showSubheader }) => {
+const MemoListItem: FC<TMemoListItemProps> = ({ data: { id, lastUsedDate, title, description }, showSubheader }) => {
   const classes = useStyles()
   return (
+    <>
+      {showSubheader && <MemoListSubheader date={lastUsedDate}/>}
+
+      <div className={classes.listItemWrapper}>
+        <Paper elevation={3}>
           <Link
+            className={classes.link}
             to={`/memo-card/${id}`}
           >
-            {showSubheader && <MemoListSubheader date={lastUsedDate}/>}
+            <ListItem className={classes.listItemRoot} button>
 
-            <div className={classes.listItemWrapper}>
-              <Paper elevation={3}>
-                <ListItem className={classes.listItemRoot} button>
-                  <ListItemText primary={title} secondary={description}/>
-                </ListItem>
-              </Paper>
-            </div>
+              <ListItemText primary={title} secondary={description}/>
+            </ListItem>
           </Link>
+
+        </Paper>
+      </div>
+    </>
   )
 }
 
