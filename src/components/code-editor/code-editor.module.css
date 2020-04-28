@@ -1,0 +1,10 @@
+.container__editor {
+    font-variant-ligatures: common-ligatures;
+    font-family: "Fira code", "Fira Mono", monospace;
+    font-size: 1em;
+    border-radius: 0.3em;
+}
+
+.container__editor textarea {
+    outline: 0;
+}
