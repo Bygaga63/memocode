@@ -1,13 +1,10 @@
 import * as React from "react"
 import { FC, useMemo } from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import Paper from "@material-ui/core/Paper"
 import List from "@material-ui/core/List"
-import ListItem from "@material-ui/core/ListItem"
-import ListItemText from "@material-ui/core/ListItemText"
-import MemoListSubheader from "./memo-list-subheader"
 import { TMemoCard } from "../../types/types"
 import DateService from "../../utils/DateService"
+import MemoListItem from "./memo-list-item"
 
 const useStyles = makeStyles((theme) => ({
   text: {
@@ -16,13 +13,6 @@ const useStyles = makeStyles((theme) => ({
   list: {
     marginBottom: theme.spacing(2),
     padding: '0 0 60px',
-  },
-  listItemRoot: {
-    margin: `0.6em 0`,
-    borderRadius: "5px"
-  },
-  listWrapper: {
-    padding: theme.spacing(0, 1)
   }
 }))
 
@@ -62,21 +52,8 @@ const MemoList: FC<TMemoListProps> = ({ data }) => {
   return (
     <React.Fragment>
         <List className={classes.list}>
-          {sortedByDateData.map(({ id, title, description, lastUsedDate }) => (
-            <React.Fragment key={id}>
-              {subheaderIdsToShow.includes(id) && <MemoListSubheader date={lastUsedDate}/>}
-
-              <div className={classes.listWrapper}>
-                <Paper elevation={3}>
-
-                <ListItem className={classes.listItemRoot} button>
-                  <ListItemText primary={title} secondary={description}/>
-                </ListItem>
-                </Paper>
-              </div>
-
-
-            </React.Fragment>
+          {sortedByDateData.map((memoCard) => (
+            <MemoListItem key={memoCard.id} data={memoCard} showSubheader={subheaderIdsToShow.includes(memoCard.id)}/>
           ))}
         </List>
     </React.Fragment>

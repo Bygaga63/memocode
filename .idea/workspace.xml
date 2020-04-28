@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ad9cebc-d53e-4410-a10f-446a7fcbaf9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gatsby-theme-material-ui-top-layout/theme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/memo-list/memo-list-item.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/code-editor/code-editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/code-editor/code-editor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/memo-list/memo-list-subheader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/memo-list/memo-list-subheader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/memo-list/memo-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/memo-list/memo-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/toolbar/toolbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/toolbar/toolbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/page-2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/memo-card.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/memo-list" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\projects\home\memocode\node_modules\prettier" />
@@ -51,6 +49,9 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\home\memocode\src\components\memo-list" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\projects\home\memocode\src\components\header" />
       <recent name="C:\projects\home\memocode\src\images" />
@@ -124,8 +125,17 @@
       <workItem from="1587974208651" duration="474000" />
       <workItem from="1587974707211" duration="839000" />
       <workItem from="1588016022928" duration="16276000" />
-      <workItem from="1588071125529" duration="11943000" />
+      <workItem from="1588071125529" duration="12061000" />
+      <workItem from="1588103078185" duration="3363000" />
     </task>
+    <task id="LOCAL-00001" summary="add material ui theme&#10;edit memo-list styles">
+      <created>1588083181431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588083181431</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,5 +153,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add material ui theme&#10;edit memo-list styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add material ui theme&#10;edit memo-list styles" />
   </component>
 </project>

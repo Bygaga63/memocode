@@ -28,7 +28,6 @@ const Header: FC<HeaderProps> = ({ title }) => (
           {title}
         </Link>
       </h2>
-      {/*<ThemeButton/>*/}
 
     </div>
 
