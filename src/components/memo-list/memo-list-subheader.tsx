@@ -5,8 +5,10 @@ import DateService from "../../utils/DateService"
 import { FC } from "react"
 
 const useStyles = makeStyles((theme) => ({
-  subheader: {
-    backgroundColor: theme.palette.background.paper
+  root: {
+    backgroundColor: theme.palette.background.default,
+    margin: 0,
+    color: '#fff',
   }
 }))
 
@@ -25,7 +27,7 @@ const getTitle = (date: Date) => {
 const MemoListSubheader: FC<MemoListSubheader> = ({date}) => {
   const classes = useStyles()
   const title = getTitle(date);
-  return (<ListSubheader className={classes.subheader}>{title}</ListSubheader>)
+  return (<ListSubheader classes={classes}>{title}</ListSubheader>)
 }
 
 

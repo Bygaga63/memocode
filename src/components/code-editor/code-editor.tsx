@@ -11,7 +11,6 @@ const CodeEditor = () => {
   const [code, changeCode] = useState(TEMP_CODE)
 
   return (
-
     <Editor
       value={code}
       onValueChange={changeCode}
@@ -23,7 +22,6 @@ const CodeEditor = () => {
       className={styles.container__editor}
       // disabled
       style={{
-
         background: "#272822",
         color: "white"
       }}/>

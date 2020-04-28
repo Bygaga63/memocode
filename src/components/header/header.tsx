@@ -9,19 +9,15 @@ type HeaderProps = {
 const Header: FC<HeaderProps> = ({ title }) => (
   <header
     style={{
-      background: `rebeccapurple`
+      background: `#8840F9`
     }}
   >
     <div
       style={{
-        // margin: `0 auto`,
-        // maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        display: "flex",
-        justifyContent: "space-between"
+        padding: `1rem 0.9rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h2 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -31,7 +27,7 @@ const Header: FC<HeaderProps> = ({ title }) => (
         >
           {title}
         </Link>
-      </h1>
+      </h2>
       {/*<ThemeButton/>*/}
 
     </div>
