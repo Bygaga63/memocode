@@ -1,5 +1,5 @@
-import { configureStore, combineReducers, Action, ThunkAction } from '@reduxjs/toolkit';
-import * as reducers from './modules'
+import { Action, combineReducers, configureStore, ThunkAction } from "@reduxjs/toolkit"
+import * as reducers from "./modules"
 
 const rootReducer = combineReducers(reducers);
 

@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import { ThemeToggler } from 'gatsby-plugin-dark-mode';
+import * as React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
-import Image from 'gatsby-image';
+import Image from "gatsby-image"
 
 const useIconsData = (): { sun: any; moon: any } => {
   const data = useStaticQuery(graphql`

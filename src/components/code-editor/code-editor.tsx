@@ -15,15 +15,15 @@ const CodeEditor = () => {
       value={code}
       onValueChange={changeCode}
       highlight={code => highlight(code, languages.ts, "ts")}
-      padding={"1rem"}
       placeholder='javascript'
       color='white'
       // readOnly
       className={styles.container__editor}
       // disabled
       style={{
-        background: "#272822",
-        color: "white"
+        color: "white",
+        padding: '6px 0'
+
       }}/>
   )
 }

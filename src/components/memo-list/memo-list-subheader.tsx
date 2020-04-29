@@ -1,8 +1,8 @@
 import ListSubheader from "@material-ui/core/ListSubheader"
 import * as React from "react"
+import { FC } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import DateService from "../../utils/DateService"
-import { FC } from "react"
 
 const useStyles = makeStyles((theme) => ({
   root: {

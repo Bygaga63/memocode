@@ -37,7 +37,7 @@ const MemoListItem: FC<TMemoListItemProps> = ({ data: { id, lastUsedDate, title,
         <Paper elevation={3}>
           <Link
             className={classes.link}
-            to={`/memo-card/${id}`}
+            to={`/memo/${id}`}
           >
             <ListItem className={classes.listItemRoot} button>
 

@@ -3,21 +3,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { MemoList, ToolBar } from "../components"
 import { TEMP_MEMO_CARDS } from "../api/MemoCardsService"
+import Header from "../components/header/header"
+import AddIcon from "@material-ui/icons/Add"
 
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
-    {/*<CodeEditor/>*/}
-    {/*<Button>Test1</Button>*/}
-    {/*<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>*/}
-    {/*  <Image/>*/}
-    {/*</div>*/}
-
-    {/*<Link to="/memo-card/">Go to page 2</Link>*/}
-
+    <Header title='MemoCode' />
     <MemoList data={TEMP_MEMO_CARDS}/>
-    <ToolBar/>
+    <ToolBar
+      FabComponent={AddIcon}
+      showSearch
+      fabType={"icon"}
+    />
   </Layout>
 )
 

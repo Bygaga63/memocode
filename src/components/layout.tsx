@@ -6,10 +6,8 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-
+import { graphql, useStaticQuery } from "gatsby"
 import "./layout.css"
-import Header from "./header/header"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,14 +22,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header title={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        {/*<footer>*/}
-        {/*  © {new Date().getFullYear()}, Built with*/}
-        {/*  {` `}*/}
-        {/*  <a href="https://www.gatsbyjs.org">Gatsby</a>*/}
-        {/*</footer>*/}
       </div>
     </>
   )
