@@ -24,10 +24,14 @@ const FormItemWrapper: FC<TFormItemWrapperProps> = ({ children, label }) => {
   const classes = useStyles()
 
   return (
-    <div className={classes.root}>
+    <React.Fragment>
       <Typography className={classes.typography}>{label}</Typography>
-      {children}
-    </div>)
+
+      <div className={classes.root}>
+        {children}
+      </div>
+    </React.Fragment>
+  )
 }
 
 export default FormItemWrapper
