@@ -15,7 +15,7 @@ const theme = createMuiTheme({
       // light: '#9d46ff',
       main: "#41454E",
       // dark: '#292F36',
-      contrastText: "#fff"
+      // contrastText: "#fff"
     },
     secondary: {
       // light: '#a255ff',
@@ -26,7 +26,7 @@ const theme = createMuiTheme({
     },
     background: {
       default: "#191919",
-      paper: "#fff"
+      paper: "#FFF"
     },
     text: {
       primary: "#292F36",
@@ -37,7 +37,7 @@ const theme = createMuiTheme({
     MuiFab: {
       root: {
         "&.MuiFab-secondary": {
-          background: "#8840F9",
+          background: "#3AB54A",
           color: "#fff"
         }
       }

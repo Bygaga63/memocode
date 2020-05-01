@@ -5,6 +5,7 @@ import { MemoList, ToolBar } from "../components"
 import { TEMP_MEMO_CARDS } from "../api/MemoCardsService"
 import Header from "../components/header/header"
 import AddIcon from "@material-ui/icons/Add"
+import { withAuthenticator } from "aws-amplify-react"
 
 
 const IndexPage = () => (
@@ -20,4 +21,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default withAuthenticator(IndexPage, true)

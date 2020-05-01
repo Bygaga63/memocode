@@ -12,7 +12,8 @@ const useStyles = makeStyles(() => ({
     top: -30,
     left: 0,
     right: 0,
-    margin: "0 auto"
+    margin: "0 auto",
+    // animation: `$a 10s`,
   },
   link: {
     textDecoration: "none",
