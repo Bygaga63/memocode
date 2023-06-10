@@ -12,7 +12,7 @@
     "aws-amplify-react": "^4.1.9",
     "babel-plugin-prismjs": "^2.0.1",
     "babel-preset-gatsby": "^0.3.6",
-    "gatsby": "^2.20.35",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-dark-mode": "^1.1.1",
     "gatsby-plugin-manifest": "^2.3.7",
